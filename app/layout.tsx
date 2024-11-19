@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import NextTopLoader from "nextjs-toploader";
 import { Toaster } from "@/components/ui/sonner";
+import Providers from "@/components/layout/providers";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -15,14 +15,16 @@ const RootLayout = ({
   children: React.ReactNode;
 }>) => {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={"overflow-hidden"}>
-        <NextTopLoader showSpinner={false} />
+        <Providers session={null}>
+          <NextTopLoader showSpinner={false} />
           <Toaster />
           {children}
+        </Providers>
       </body>
     </html>
   );
-}
+};
 
 export default RootLayout;

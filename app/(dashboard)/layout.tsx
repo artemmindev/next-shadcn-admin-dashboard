@@ -1,5 +1,6 @@
-import KBar from "@/components/layout/kar";
 import Header from "@/components/layout/header";
+import AppSidebar from "@/components/layout/sidebar";
+import KBar from "@/components/layout/kar";
 import { SidebarInset, SidebarProvider } from "@/components/ui/sidebar";
 import type { Metadata } from "next";
 
@@ -16,6 +17,7 @@ export default function DashboardLayout({
   return (
     <KBar>
       <SidebarProvider>
+        <AppSidebar />
         <SidebarInset>
           <Header />
           {children}
