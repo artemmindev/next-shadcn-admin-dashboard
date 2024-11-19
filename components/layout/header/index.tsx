@@ -1,8 +1,9 @@
 import React from "react";
 import { SidebarTrigger } from "@/components/ui/sidebar";
 import { Separator } from "@/components/ui/separator";
-import SearchInput from "./SearchInput";
-import ThemeToggle from "@/components/layout/providers/theme/ThemeToggle";
+import SearchInput from "@/components/layout/header/SearchInput";
+import ThemeToggle from "@/components/layout/header/ThemeToggle";
+import UserProfile from "@/components/layout/header/UserProfile";
 
 const Header = () => {
   return (
@@ -16,6 +17,7 @@ const Header = () => {
         <div className="hidden md:flex">
           <SearchInput />
         </div>
+        <UserProfile />
         <ThemeToggle />
       </div>
     </header>

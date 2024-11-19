@@ -10,3 +10,9 @@ export const navItems: NavItem[] = [
     items: []
   },
 ];
+
+export const user = {
+  name: "Artem",
+  image: "",
+  email: "artemmindev@gmail.com",
+};

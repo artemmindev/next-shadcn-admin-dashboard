@@ -29,7 +29,7 @@ import {
   SidebarMenuSubItem,
   SidebarRail,
 } from "@/components/ui/sidebar";
-import { navItems } from "@/constants/data";
+import { navItems, user } from "@/constants/data";
 import {
   BadgeCheck,
   Bell,
@@ -43,12 +43,6 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import * as React from "react";
 import { Icons } from "@/components/icons";
-
-export const user = {
-  name: "Artem",
-  image: "",
-  email: "artemmindev@gmail.com",
-};
 
 export default function AppSidebar() {
   const pathname = usePathname();
