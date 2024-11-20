@@ -9,6 +9,14 @@ export const navItems: NavItem[] = [
     shortcut: ['d', 'd'],
     items: []
   },
+  {
+    title: 'Product',
+    url: '/product',
+    icon: 'product',
+    isActive: false,
+    shortcut: ['p', 'p'],
+    items: []
+  },
 ];
 
 export const user = {
