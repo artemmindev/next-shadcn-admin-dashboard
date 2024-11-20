@@ -1,5 +1,6 @@
 import { AreaGraph } from "@/components/app/dashboard/AreaGraph";
 import BarGraph from "@/components/app/dashboard/BarGraph";
+import { PieGraph } from "@/components/app/dashboard/PieGraph";
 import RecentSales from "@/components/app/dashboard/RecentSales";
 import PageContainer from "@/components/layout/PageContainer";
 import {
@@ -130,6 +131,9 @@ const dashboard = () => {
           </Card>
           <div className="col-span-4">
             <AreaGraph />
+          </div>
+          <div className="col-span-4 md:col-span-3">
+            <PieGraph />
           </div>
         </div>
       </div>
