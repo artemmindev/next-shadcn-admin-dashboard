@@ -1,4 +1,5 @@
 import BarGraph from "@/components/app/dashboard/BarGraph";
+import RecentSales from "@/components/app/dashboard/RecentSales";
 import PageContainer from "@/components/layout/PageContainer";
 import {
   Card,
@@ -117,6 +118,15 @@ const dashboard = () => {
           <div className="col-span-4">
             <BarGraph />
           </div>
+          <Card className="col-span-4 md:col-span-3">
+            <CardHeader>
+              <CardTitle>Recent Sales</CardTitle>
+              <CardDescription>You made 265 sales this month.</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <RecentSales />
+            </CardContent>
+          </Card>
         </div>
       </div>
     </PageContainer>
