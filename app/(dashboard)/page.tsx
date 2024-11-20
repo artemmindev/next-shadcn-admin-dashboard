@@ -1,5 +1,12 @@
+import BarGraph from "@/components/app/dashboard/BarGraph";
 import PageContainer from "@/components/layout/PageContainer";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 
 const dashboard = () => {
   return (
@@ -105,6 +112,11 @@ const dashboard = () => {
               </p>
             </CardContent>
           </Card>
+        </div>
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-7">
+          <div className="col-span-4">
+            <BarGraph />
+          </div>
         </div>
       </div>
     </PageContainer>
