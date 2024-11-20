@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import NextTopLoader from "nextjs-toploader";
+import { NuqsAdapter } from "nuqs/adapters/next/app";
 import { Toaster } from "@/components/ui/sonner";
 import Providers from "@/components/layout/providers";
 import "./globals.css";
@@ -17,11 +18,13 @@ const RootLayout = ({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={"overflow-hidden"}>
-        <Providers session={null}>
-          <NextTopLoader showSpinner={false} />
-          <Toaster />
-          {children}
-        </Providers>
+        <NuqsAdapter>
+          <Providers session={null}>
+            <NextTopLoader showSpinner={false} />
+            <Toaster />
+            {children}
+          </Providers>
+        </NuqsAdapter>
       </body>
     </html>
   );

@@ -1,5 +1,6 @@
 import PageContainer from "@/components/layout/PageContainer";
 import Heading from "@/components/ui/heading";
+import ProductListing from "@/components/app/product/ProductListing";
 
 export const metadata = {
   title: "Dashboard: Products",
@@ -15,6 +16,7 @@ export default async function Page() {
             description="Manage products (Server side table functionalities.)"
           />
         </div>
+        <ProductListing />
       </div>
     </PageContainer>
   );
