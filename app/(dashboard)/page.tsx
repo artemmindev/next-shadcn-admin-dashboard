@@ -1,3 +1,4 @@
+import { AreaGraph } from "@/components/app/dashboard/AreaGraph";
 import BarGraph from "@/components/app/dashboard/BarGraph";
 import RecentSales from "@/components/app/dashboard/RecentSales";
 import PageContainer from "@/components/layout/PageContainer";
@@ -127,6 +128,9 @@ const dashboard = () => {
               <RecentSales />
             </CardContent>
           </Card>
+          <div className="col-span-4">
+            <AreaGraph />
+          </div>
         </div>
       </div>
     </PageContainer>
