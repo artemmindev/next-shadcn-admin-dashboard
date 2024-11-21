@@ -10,6 +10,14 @@ export const navItems: NavItem[] = [
     items: []
   },
   {
+    title: 'Employee',
+    url: '/employee',
+    icon: 'user',
+    shortcut: ['e', 'e'],
+    isActive: false,
+    items: []
+  },
+  {
     title: 'Product',
     url: '/product',
     icon: 'product',
@@ -34,4 +42,23 @@ export type Product = {
   id: number;
   category: string;
   updated_at: string;
+};
+
+export type Employee = {
+  id: number;
+  first_name: string;
+  last_name: string;
+  email: string;
+  phone: string;
+  gender: string;
+  date_of_birth: string;
+  street: string;
+  city: string;
+  state: string;
+  country: string;
+  zipcode: string;
+  longitude?: number;
+  latitude?: number;
+  job: string;
+  profile_picture?: string | null;
 };
