@@ -72,9 +72,8 @@ export const fakeUsers = {
         first_name: faker.person.firstName(),
         last_name: faker.person.lastName(),
         email: `${faker.internet.email()}`,
-        phone: `001-${Math.floor(Math.random() * 900) + 100}-${
-          Math.floor(Math.random() * 900) + 100
-        }-${Math.floor(Math.random() * 10000)}`,
+        phone: `001-${Math.floor(Math.random() * 900) + 100}-${Math.floor(Math.random() * 900) + 100
+          }-${Math.floor(Math.random() * 10000)}`,
         street: `${Math.floor(
           Math.random() * 1000
         )} ${faker.location.street()}`,
@@ -161,6 +160,28 @@ export const fakeUsers = {
       offset,
       limit,
       users: paginatedUsers
+    };
+  },
+
+  async getUserById(id: number) {
+    await delay(1000);
+
+    const user = this.records.find((user) => user.id === id);
+
+    if (!user) {
+      return {
+        success: false,
+        message: `User with ID ${id} not found`
+      };
+    }
+
+    const currentTime = new Date().toISOString();
+
+    return {
+      success: true,
+      time: currentTime,
+      message: `User with ID ${id} found`,
+      user
     };
   }
 };

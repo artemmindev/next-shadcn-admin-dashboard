@@ -13,9 +13,8 @@ export default async function ProductView({ productId }: TProductViewProps) {
   if (productId !== "new") {
     const data = await fakeProducts.getProductById(Number(productId));
     product = data.product as Product;
-    if (!product) {
-      notFound();
-    }
+    if (!product) notFound();
+
     pageTitle = `Edit Product`;
   }
 
