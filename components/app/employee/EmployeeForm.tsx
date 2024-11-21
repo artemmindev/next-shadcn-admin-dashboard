@@ -53,7 +53,7 @@ export default function EmployeeForm({
 }: IEmployeeFormProps) {
   const defaultValues = {
     name: `${initialData?.first_name} ${initialData?.last_name}` || "",
-    country: initialData?.country?.toLocaleLowerCase() || "",
+    country: initialData?.country?.toLowerCase() || "",
     email: initialData?.email || "",
     company: initialData?.job || "",
     gender: initialData?.gender,

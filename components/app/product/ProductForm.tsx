@@ -64,7 +64,7 @@ const ProductForm = ({
 }) => {
   const defaultValues = {
     name: initialData?.name || "",
-    category: initialData?.category || "",
+    category: initialData?.category?.toLowerCase() || "",
     price: initialData?.price || 0,
     description: initialData?.description || "",
   };
@@ -136,7 +136,7 @@ const ProductForm = ({
                     <FormLabel>Category</FormLabel>
                     <Select
                       onValueChange={(value) => field.onChange(value)}
-                      value={field.value[field.value.length - 1]}
+                      value={field.value}
                     >
                       <FormControl>
                         <SelectTrigger>
@@ -144,13 +144,14 @@ const ProductForm = ({
                         </SelectTrigger>
                       </FormControl>
                       <SelectContent>
-                        <SelectItem value="beauty">Beauty Products</SelectItem>
                         <SelectItem value="electronics">Electronics</SelectItem>
+                        <SelectItem value="furniture">Furniture</SelectItem>
                         <SelectItem value="clothing">Clothing</SelectItem>
-                        <SelectItem value="home">Home & Garden</SelectItem>
-                        <SelectItem value="sports">
-                          Sports & Outdoors
-                        </SelectItem>
+                        <SelectItem value="toys">Toys</SelectItem>
+                        <SelectItem value="groceries">Groceries</SelectItem>
+                        <SelectItem value="books">Books</SelectItem>
+                        <SelectItem value="beauty products">Beauty Products</SelectItem>
+                        <SelectItem value="jewelry">Jewelry</SelectItem>
                       </SelectContent>
                     </Select>
                     <FormMessage />
