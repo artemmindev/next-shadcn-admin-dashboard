@@ -1,6 +1,6 @@
 import { Product } from "@/constants/data";
 import { fakeProducts } from "@/constants/mock-api";
-import { DataTable as ProductTable } from "@/components/ui/table/DataTable";
+import { DataTable as ProductTable } from "@/components/ui/common/table/DataTable";
 import { columns } from "@/components/app/product/product-tables/Columns";
 import { searchParamsCache } from "@/lib/searchParams";
 

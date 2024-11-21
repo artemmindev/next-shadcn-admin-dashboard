@@ -42,7 +42,7 @@ import {
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import * as React from "react";
-import { Icons } from "@/components/icons";
+import { Icons } from "@/components/ui/common/icons";
 
 export default function AppSidebar() {
   const pathname = usePathname();

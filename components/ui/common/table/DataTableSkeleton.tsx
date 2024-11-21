@@ -7,7 +7,7 @@ import {
   TableHeader,
   TableRow
 } from '@/components/ui/table';
-import { ScrollArea, ScrollBar } from '../scroll-area';
+import { ScrollArea, ScrollBar } from '../../scroll-area';
 
 const DataTableSkeleton = ({
   columnCount = 1,
