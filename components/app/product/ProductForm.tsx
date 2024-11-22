@@ -144,14 +144,16 @@ const ProductForm = ({
                         </SelectTrigger>
                       </FormControl>
                       <SelectContent>
+                        <SelectItem value="beauty products">
+                          Beauty Products
+                        </SelectItem>
+                        <SelectItem value="books">Books</SelectItem>
+                        <SelectItem value="clothing">Clothing</SelectItem>
                         <SelectItem value="electronics">Electronics</SelectItem>
                         <SelectItem value="furniture">Furniture</SelectItem>
-                        <SelectItem value="clothing">Clothing</SelectItem>
-                        <SelectItem value="toys">Toys</SelectItem>
                         <SelectItem value="groceries">Groceries</SelectItem>
-                        <SelectItem value="books">Books</SelectItem>
-                        <SelectItem value="beauty products">Beauty Products</SelectItem>
                         <SelectItem value="jewelry">Jewelry</SelectItem>
+                        <SelectItem value="toys">Toys</SelectItem>
                       </SelectContent>
                     </Select>
                     <FormMessage />

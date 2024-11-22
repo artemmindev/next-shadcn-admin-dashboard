@@ -25,6 +25,14 @@ export const navItems: NavItem[] = [
     shortcut: ['p', 'p'],
     items: []
   },
+  {
+    title: 'Kanban',
+    url: '/kanban',
+    icon: 'kanban',
+    shortcut: ['k', 'k'],
+    isActive: false,
+    items: []
+  }
 ];
 
 export const user = {

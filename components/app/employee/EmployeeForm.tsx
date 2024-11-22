@@ -104,14 +104,14 @@ export default function EmployeeForm({
                         </SelectTrigger>
                       </FormControl>
                       <SelectContent>
-                        <SelectItem value="usa">USA</SelectItem>
-                        <SelectItem value="uk">UK</SelectItem>
-                        <SelectItem value="canada">Canada</SelectItem>
                         <SelectItem value="australia">Australia</SelectItem>
-                        <SelectItem value="germany">Germany</SelectItem>
-                        <SelectItem value="france">France</SelectItem>
-                        <SelectItem value="japan">Japan</SelectItem>
                         <SelectItem value="brazil">Brazil</SelectItem>
+                        <SelectItem value="canada">Canada</SelectItem>
+                        <SelectItem value="france">France</SelectItem>
+                        <SelectItem value="germany">Germany</SelectItem>
+                        <SelectItem value="japan">Japan</SelectItem>
+                        <SelectItem value="uk">UK</SelectItem>
+                        <SelectItem value="usa">USA</SelectItem>
                       </SelectContent>
                     </Select>
                     <FormMessage />
